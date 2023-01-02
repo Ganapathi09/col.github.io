@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>javascript</title>
+        <link rel="stylesheet" href="Register.CSS">
+        <script src="Register.js">
+
+        </script>
+
+    </head>
+    <body bgcolor="yellow">
+        <div class="container">
+            <div class="main">   
+        <center><h2>Registration Form</h2></center>
+        <form id="form_id" method="post" name="myform">
+       
+            <b>Firstname:</b>
+         <input type="text" id="firstname"><br>
+        <p style="color:red" id="x1"></p></br> 
+
+         <b>DOB:</b>
+         <input type="text" placeholder="Enter dob" name="dob" id="dob"><br></br>
+        
+        <b>Address:</b>
+        <textarea placeholder="Enter the address" name="address" id="address" cols="30" row="10"></textarea><br></br>
+        
+        
+         <b>Ph_no:</b>
+            <input type="text"  name="ph_no" id="ph_no" maxlength="10"><br></br>
+           <p style="color:red"><b id="x5"></p></b></br> 
+    
+           <label><b>Gender:</b></label>
+           <input type="radio"  id="Male" name="gender">Male<br></br>
+           <input type="radio"  id="Female" name="gender">Female <br></br>
+
+           <label><b>Course:</b></label>
+           <select>
+            <option> CS </option>
+            <option> CIVIL </option>
+            <option> MECH </option>
+            <option> ME </option>
+            <option> PT </option>
+            <option> E&C </option>
+            <option> AT </option>
+            <option> EE </option>
+           </select><br></b>
+
+         
+         <label>Password:</label>
+         <input type="Password" name="password" id="password"> <br></br> 
+         
+         
+         <input type="button" value="Submit" id="register" onclick="validate()">
+       </form>
+        </div>
+        </div>
+        </body>
+
+</html>
